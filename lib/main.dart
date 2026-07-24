@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
+import 'theme/app_theme.dart';
 
 void main() {
   runApp(const DriftApp());
@@ -14,6 +15,7 @@ class DriftApp extends StatelessWidget {
     return MaterialApp(
       title: 'Drift',
       debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
       home: const HomeScreen(),
     );
   }
